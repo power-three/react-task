@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+}
+
+main {
+  margin: 68px 0px;
+}
+
+
+
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /*5dade2*/ 
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-family: 'Pacifico', cursive;
+  font-size: 140%;
+}
+
+li a:hover:not(.active) {
+  background-color: #5D99E2;
+}
+
+
+/*Intro image*/
+.container {
+  position: relative;
+}
+
+/*Place text in the middle of image*/
+.center {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 7vw;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+}
+
+/*Size adjustment*/
+.photo {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+/*Headings*/
+.heading {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+}
+
+
+/*About section*/
+.about {
+  padding: 30px;
+  text-align: center;
+  color: #5dade2;
+  font-size: 18px;
+}
+
+
+/*Project section*/
+.us {
+  padding: 30px;
+  text-align: center;
+  background-color: #5dade2;
+  color: #fff;
+  font-size: 20px;
+}
+
+/*Grid css*/
+.row {
+  display: inline-flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+.icon {
+  width: 50%;
+}
+
+.icon-text {
+  font-family: "Pacifico", cursive;
+  color: #fff;
+  font-size: 20px;
+}
+
+/*Stack images one on top of the other below 600px*/
+@media screen and (max-width: 600px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+/*Contact section*/
+.contact {
+  padding: 30px;
+  text-align: center;
+  color: #5dade2;
+  font-size: 18px;
+}
+
+/*Text fields*/
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #5dade2;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+textarea {
+  height: 200px;
+}
+
+
+input[type=submit] {
+  background-color: #5dade2;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+
+
+footer {
+  display:flex;
+  justify-content: center;
+  background-color: #5dade2;
+  text-align: center;
+  padding: 10px;
+}
+
+.font-icon {
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+}
